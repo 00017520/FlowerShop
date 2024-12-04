@@ -1,18 +1,4 @@
-main {
-  padding: 20px;
-  background: linear-gradient(
-    to bottom,
-    rgba(127, 121, 109, 255),
-    rgba(127, 121, 109, 255),
-    rgba(134, 128, 116, 255),
-    rgba(140, 133, 117, 255),
-    rgba(144, 134, 124, 255),
-    rgba(146, 139, 121, 255),
-    rgba(149, 142, 124, 255),
-    rgba(152, 145, 126, 255)
-  );
-  color: #f0f0f0;
-}
+
 
 main img {
   width: 35%;
@@ -116,9 +102,9 @@ textarea::placeholder {
 }
 
 #rating {
-  position: absolute;
+  /* position: absolute;
   top: 15%;
-  left: 30%;
+  left: 30%; */
   background-color: rgba(97, 60, 107, 0.436);
   border: 2px solid purple;
   border-radius: 30px;
@@ -141,13 +127,13 @@ input {
   outline: none;
 }
 
-#reviews,
+/* #reviews,
 #map {
   position: absolute;
   top: 15%;
   left: 60%;
   
-}
+} */
 
 
 #allReviews.scrollable {
@@ -177,8 +163,8 @@ p {
 }
 
 #contact {
-  position: absolute;
-  transform: translate(48%, -100%);
+  /* position: absolute;
+  transform: translate(48%, -100%); */
   border-radius: 30px;
   padding: 20px;
   height: 70%;
@@ -207,7 +193,7 @@ h1 {
 #pin1,
 #pin2 {
   width: 20px;
-  position: absolute;
+  /* position: absolute; */
   margin: 3px;
 }
 
@@ -229,17 +215,71 @@ h1 {
 .socialM a {
   margin-left: 30px;
 }
-
-
+.socialM img{
+  transform: translateY(30px);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #d3c3e6;
+  padding: 0;
+  margin: 0;
+  padding: 20px;
+  gap:60px;
+  background: linear-gradient(
+    to bottom,
+    rgba(127, 121, 109, 255),
+    rgba(127, 121, 109, 255),
+    rgba(134, 128, 116, 255),
+    rgba(140, 133, 117, 255),
+    rgba(144, 134, 124, 255),
+    rgba(146, 139, 121, 255),
+    rgba(149, 142, 124, 255),
+    rgba(152, 145, 126, 255)
+  );
+  color: #f0f0f0;
+  height: 100%;
+  overflow: hidden;
+}
+main>img{
+  position: absolute;
+  left: 0;
+  top: 20%;
+  z-index: 0;
+}
+#rating, #contact{
+  z-index: 1;
+  height:100%;
+}
+#rating{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+}
+main section aside{
+  height: 100%;
+}
+main section{
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
 @media (max-width: 768px) {
   main {
     margin: 0;
     width: 100%;
-    height: 200vh;
+    height: 300vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     background-color: #d3c3e6;
     padding: 0;
     gap:30px;
@@ -260,6 +300,7 @@ h1 {
     position: static;
     padding: 15px;
     margin: 0;
+    flex-direction: column;
   }
   aside h1{
     font-size: 20px;

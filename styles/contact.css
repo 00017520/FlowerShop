@@ -117,7 +117,7 @@ textarea::placeholder {
 
 #rating {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 30%;
   background-color: rgba(97, 60, 107, 0.436);
   border: 2px solid purple;
@@ -178,10 +178,10 @@ p {
 
 #contact {
   position: absolute;
-  transform: translate(48%, -112%);
+  transform: translate(48%, -100%);
   border-radius: 30px;
   padding: 20px;
-  height: 57%;
+  height: 70%;
   width: 60%;
   background-color: rgba(97, 60, 107, 0.436);
   border: 2px solid purple;

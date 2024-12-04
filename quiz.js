@@ -45,5 +45,5 @@ document.getElementById("questions").addEventListener("submit", function (event)
         resultText = N5;
         image.setAttribute("src", "../imgs/Passionate.webp");
     }
-    document.getElementById("result").innerHTML = resultText + '<a href="pricing.html"> Order now..!</a>';
+    document.getElementById("result").innerHTML = resultText + '<a href="./prices.html"> Order now..!</a>';
 });

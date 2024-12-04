@@ -1,4 +1,4 @@
-// Flower data
+//flower data
 const flowerData = [
   {
     category: "rose",

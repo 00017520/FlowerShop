@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //tinckling sound
   const playTwinkleSound = () => {
-    const audio = new Audio("/assets/meow.mp3");
+    const audio = new Audio("../assets/meow.mp3");
     audio.play();
   };
 

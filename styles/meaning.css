@@ -1,0 +1,99 @@
+.MeaningP {
+  background-image: url("/imgs/meaningbg.jpg");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+main {
+  background-color: rgba(84, 80, 80, 0.367);
+}
+
+table {
+  border: solid 3px purple;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  border-collapse: collapse;
+  background-color: rgba(167, 123, 238, 0.712);
+  color: #ffffff;
+}
+
+thead th {
+  border: solid 3px purple;
+  padding: 10px;
+}
+tbody td {
+  border: solid 3px purple;
+  padding: 10px;
+  font-size: 17px;
+}
+table img {
+  margin: -10px;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+h1 {
+  width: 70%;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 4vw;
+  text-align: center;
+  color: #6f27aa;
+}
+
+tbody tr:hover {
+  background-color: rgba(104, 62, 171, 0.362);
+  transition: background-color 0.3s ease;
+}
+
+tbody select {
+  background-color: transparent;
+  border: 2px solid #a256d4;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+tbody select:hover {
+  background-color:transparent;
+  border-color: #7d38b3;
+}
+
+tbody select:focus {
+  background-color: #a256d4;
+  border-color: #a256d4;
+  box-shadow: 0 0 8px rgba(162, 86, 212, 0.5);
+}
+.orderNow {
+  font-style: italic;
+  transform: translateX(3);
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 6vw;
+  }
+  table {
+    width: 100%;
+  }
+  table img {
+    width: 50px;
+    height: 50px;
+  }
+  tbody td {
+    font-size: 10px;
+  }
+  tbody select {
+    font-size: 10px;
+    width: 70px;
+    padding: 5px 0;
+  }
+  
+}

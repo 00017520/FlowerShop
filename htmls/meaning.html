@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower meaning</title>
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="../styles/meaning.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="MeaningP">
+      <header>
+        <img src="../imgs/logo4.jpg" alt="logo" class="logo" />
+        <button onclick="nav()"><img src="../imgs/logo3.jpg"/></button>
+        <nav class="open">
+          <ul>
+            <li><a href="/htmls/home.html">Home</a></li>
+            <li><a href="/htmls/meaning.html">Flowers meaning</a></li>
+            <li><a href="/htmls/quiz.html">Your personal flower</a></li>
+            <li><a href="/htmls/prices.html">Boques Pricing</a></li>
+            <li><a href="/htmls/history.html">History of Flowers</a></li>
+            <li><a href="/htmls/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>The Language of Flowers</h1>
+        <table>
+          <thead>
+            <tr id="headtable">
+              <th>N.</th>
+              <th>Img</th>
+              <th>Name</th>
+              <th>Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="tulip">
+              <td>1</td>
+              <td><img src="/imgs/tulip.jpg" alt="tulip" /></td>
+              <td>
+                <select
+                  id="tulipColor"
+                  name="combobox"
+                  onchange="flowerMeaning('tulip')"
+                >
+                  <option value="default">Tulip</option>
+                  <option value="red">Red Tulips</option>
+                  <option value="yellow">Yellow Tulips</option>
+                  <option value="pink">Pink Tulips</option>
+                  <option value="white">White Tulips</option>
+                  <option value="purple">Purple Tulips</option>
+                  <option value="orange">Orange Tulips</option>
+                </select>
+              </td>
+              <td id="tulipDes">
+                <p>
+                  Tulips are symbolic of deep love, elegance, and grace. They
+                  represent perfect love and are often associated with spring,
+                  renewal, and hope.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="rose">
+              <td>2</td>
+              <td><img src="/imgs/bqs/rosebq5.jpg" alt="rose" /></td>
+              <td>
+                <select
+                  id="roseColor"
+                  name="combobox"
+                  onchange="flowerMeaning('rose')"
+                >
+                  <option value="default">Rose</option>
+                  <option value="red">Red Roses</option>
+                  <option value="yellow">Yellow Roses</option>
+                  <option value="pink">Pink Roses</option>
+                  <option value="white">White Roses</option>
+                  <option value="purple">Purple Roses</option>
+                  <option value="orange">Orange Roses</option>
+                </select>
+              </td>
+              <td id="roseDes">
+                <p>
+                  Roses symbolize love and passion. Each color carries unique
+                  meanings, from red for romance to yellow for friendship and
+                  white for purity.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="sunflower">
+              <td>3</td>
+              <td><img src="/imgs/bqs/sunflowerbq3.jpg" alt="sunflower" /></td>
+              <td>Sunflower</td>
+              <td>
+                <p>
+                  With their radiant faces, sunflowers symbolize loyalty,
+                  adoration, and positivity. Giving sunflowers expresses a wish
+                  for joy, warmth, and a reminder to always look toward the
+                  light, no matter how dark the times may seem.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="chamomile">
+              <td>4</td>
+              <td><img src="/imgs/chamomile.jpg" alt="chamomile" /></td>
+              <td>Chamomile</td>
+              <td>
+                <p>
+                  A humble yet meaningful flower, chamomile represents
+                  relaxation, resilience, and peace. Gifting chamomile is a
+                  thoughtful way to wish someone tranquility and strength,
+                  reminding them to take a moment to breathe and find calm.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="lily">
+              <td>5</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="lily" /></td>
+              <td>
+                <select
+                  id="lilyColor"
+                  name="combobox"
+                  onchange="flowerMeaning('lily')"
+                >
+                  <option value="default">Lily</option>
+                  <option value="white">White Lilies</option>
+                  <option value="pink">Pink Lilies</option>
+                  <option value="orange">Orange Lilies</option>
+                  <option value="yellow">Yellow Lilies</option>
+                </select>
+              </td>
+              <td id="lilyDes">
+                <p>
+                  Lilies symbolize purity, renewal, and elegance. Their
+                  different colors convey admiration, hope, or joy, making them
+                  versatile gifts.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="hyacinth">
+              <td>6</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="hyacinth" /></td>
+              <td>
+                <select
+                  id="hyacinthColor"
+                  name="combobox"
+                  onchange="flowerMeaning('hyacinth')"
+                >
+                  <option value="default">Hyacinths</option>
+                  <option value="blue">Blue Hyacinths</option>
+                  <option value="purple">Purple Hyacinths</option>
+                  <option value="white">White Hyacinths</option>
+                  <option value="pink">Pink Hyacinths</option>
+                  <option value="yellow">Yellow Hyacinths</option>
+                </select>
+              </td>
+              <td id="hyacinthDes">
+                <p>
+                  Hyacinths are symbolic of playfulness, rebirth, and sincerity.
+                  They are vibrant spring flowers that brighten up any garden or
+                  bouquet. Hyacinths carry additional meanings based on their
+                  color, making them suitable for various emotional expressions.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="peony">
+              <td>7</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="peony" /></td>
+              <td>Peony</td>
+              <td>
+                <p>
+                  Peonies are lush and romantic, symbolizing prosperity, honor,
+                  and good fortune. When gifted, they express a wish for
+                  happiness, abundance, and a prosperous future. They are
+                  especially meaningful in romantic settings, representing
+                  devotion and love.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="daffodil">
+              <td>8</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="daffodil" /></td>
+              <td>Daffodil</td>
+              <td>
+                <p>
+                  Daffodils are a bright and hopeful symbol of new beginnings
+                  and resilience. Gifting daffodils expresses encouragement,
+                  optimism, and a wish for a fresh start filled with happiness.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="carnation">
+              <td>9</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="carnation" /></td>
+              <td>
+                <select
+                  id="carnationColor"
+                  name="combobox"
+                  onchange="flowerMeaning('carnation')"
+                >
+                  <option value="default">Carnation</option>
+                  <option value="white">White Carnations</option>
+                  <option value="pink">Pink Carnations</option>
+                  <option value="red">Red Carnations</option>
+                  <option value="yellow">Yellow Carnations</option>
+                </select>
+              </td>
+              <td id="carnationDes">
+                <p>
+                  Carnations symbolize love, admiration, and distinction. Their
+                  wide range of colors allows them to express a variety of
+                  emotions and sentiments.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="orchid">
+              <td>10</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="orchid" /></td>
+              <td>Orchid</td>
+              <td>
+                <p>
+                  Exquisite and elegant, orchids represent rare beauty,
+                  strength, and refinement. When given as a gift, they convey
+                  admiration for the recipient's uniqueness and grace, often
+                  symbolizing deep respect and luxury.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="daisy">
+              <td>11</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="daisy" /></td>
+              <td>Daisy</td>
+              <td>
+                <p>
+                  Simple and charming, daisies symbolize innocence, purity, and
+                  true love. When gifted, they express sincere admiration and
+                  celebrate the recipient's cheerful and kindhearted nature.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="chrysanthemum">
+              <td>12</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="chrysanthemum" /></td>
+              <td>Chrysanthemum</td>
+              <td>
+                <p>
+                  Chrysanthemums symbolize loyalty, joy, and long life. When
+                  gifted, they express celebration, friendship, or respect. In
+                  some cultures, they are a token of honor and remembrance.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="lavender">
+              <td>13</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="lavender" /></td>
+              <td>Lavender</td>
+              <td>
+                <p>
+                  Lavender is the flower of calm and devotion. When given as a
+                  gift, it conveys serenity, grace, and a deep wish for the
+                  recipient to find peace and relaxation in life.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="jasmine">
+              <td>14</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="jasmine" /></td>
+              <td>Jasmine</td>
+              <td>
+                <p>
+                  Jasmine is a fragrant flower that symbolizes purity, love, and
+                  sensuality. Gifting jasmine expresses admiration and a
+                  celebration of the recipient's beauty and charm.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="hydrangea">
+              <td>15</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="hydrangea" /></td>
+              <td>Hydrangea</td>
+              <td>
+                <p>
+                  Hydrangeas are a heartfelt gesture, representing gratitude,
+                  understanding, and abundance. They are perfect for expressing
+                  deep emotions, whether it's an apology, appreciation, or a
+                  celebration of a meaningful bond.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+            <tr id="babyBreath">
+              <td>16</td>
+              <td><img src="/imgs/bqs/lilybq4.jpg" alt="babyBreath" /></td>
+              <td>Baby's Breath</td>
+              <td>
+                <p>
+                  This delicate flower symbolizes innocence, purity, and
+                  everlasting love. Often used as a complement to other flowers,
+                  baby's breath is a sweet gesture of enduring affection and
+                  care.<a href="./prices.html"><span class="orderNow"> Order now</span></a>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+      <!-- footer -->
+      <footer>
+        <section>
+          <div class="about">
+            <h2>Contact us</h2>
+            <ul>
+              <li>Address:<a href="">Istikbol Street 12, 100047, Tashkent, Uzbekistan</a></li>
+              <li>Phone number:<a href="">+998 90 123 45 67</a></li>
+              <li>Email:<a href="">info@boques.uz</a></li>
+              <li>
+                <a href="./contact.html"><span class="viewMore">More in here</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="links">
+            <h2>Links</h2>
+            <ul>
+              <li><a href="/htmls/home.html">Home</a></li>
+              <li><a href="/htmls/meaning.html">Flowers meaning</a></li>
+              <li><a href="/htmls/quiz.html">Personal flower</a></li>
+              <li><a href="/htmls/prices.html">Boques Pricing</a></li>
+              <li><a href="/htmls/history.html">Flowers's history</a></li>
+              <li><a href="/htmls/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="socialM">
+            <h2>Follow us</h2>
+            <div class="inst">
+              <img id="ins1" src="/imgs/instagram.png" alt="instagram icon">
+              <img id="ins2" src="/imgs/instagram-color.png" alt="instagram icon">
+              <a href="#" class="socialA" >Instagram</a> 
+            </div><br>
+            <div class="pint">
+              <img id="pin1" src="/imgs/pinterest.png" alt="pinterest icon">
+              <img id="pin2" src="/imgs/pinterest-color.png" alt="pinterest icon">
+              <a href="#"  class="socialA">Pinterest</a>
+          </div>
+          </div>
+        </section>
+        <section>
+          <div class="copy">
+            <p>&copy; 2024 Web-tech | This website was created to fulfill Web Technology 
+              module's requirements and does not represent an actual company or service</p>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="/index.js"></script>
+    <script src="../header.js"></script>
+  </body>
+</html>

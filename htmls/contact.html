@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <img src="/imgs/logo4.jpg" alt="logo" class="logo" />
+      <button onclick="nav()"><img src="../imgs/logo3.jpg"/></button>
+      <nav class="open">
+        <ul>
+          <li><a href="/htmls/home.html">Home</a></li>
+            <li><a href="/htmls/meaning.html">Flowers meaning</a></li>
+            <li><a href="/htmls/quiz.html">Your personal flower</a></li>
+            <li><a href="/htmls/prices.html">Boques Pricing</a></li>
+            <li><a href="/htmls/history.html">History of Flowers</a></li>
+            <li><a href="/htmls/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <img src="../imgs/tulip01.jpg" alt="tulip" />
+      <section id="rating">
+        <aside id="rateUs">
+          <h1>Rate Us:</h1>
+          <form action="">
+            <div class="stars">
+              <span data-star="1" class="star">&#9734;</span>
+              <span data-star="2" class="star">&#9734;</span>
+              <span data-star="3" class="star">&#9734;</span>
+              <span data-star="4" class="star">&#9734;</span>
+              <span data-star="5" class="star">&#9734;</span>
+            </div>
+            <p>What did you like the most?</p>
+
+            <div class="options">
+              <label>
+                <input type="checkbox" value="Website Design" />
+                Website Design
+              </label>
+              <label
+                ><input type="checkbox" value="Delivery Service" /> Delivery
+                Service</label
+              >
+              <label
+                ><input type="checkbox" value="Customer Support" /> Customer
+                Support</label
+              >
+              <label
+                ><input type="checkbox" value="Product Quality" /> Product
+                Quality</label
+              >
+            </div>
+            <label for="name">Your Name</label>
+            <input type="name" name="name" id="name" required />
+            <textarea
+              id="feedback"
+              placeholder="Tell us more about your experience..."
+            ></textarea>
+            <button id="submit">Rate</button>
+          </form>
+        </aside>
+        <aside id="reviews">
+          <h2>Customer Reviews:</h2>
+          <div id="allReviews">
+            <div class="review">
+              <strong>🌟🌟🌟🌟🌟</strong>
+              <p id="customer">Lily</p>
+              <p>"Fantastic service and beautiful flowers!"</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="contact">
+        <aside id="contactInfo">
+          <h1>Find us here:</h1>
+          <summary>
+            <h3>Address:</h3>
+            <address>Istikbol Street 12, 100047, Tashkent, Uzbekistan</address>
+          </summary>
+          <summary>
+            <h3>Email:</h3>
+            <a href="mailto:info@boques.uz">info@boques.uz </a>
+          </summary>
+
+          <summary>
+            <h3>Phone:</h3>
+            <pre>+998 90 123 45 67</pre>
+          </summary>
+          <summary>
+            <h3>Working Hours:</h3>
+            <pre> Monday - Friday: 9:00 - 18:00  </pre>
+            <pre> Saturday-Sunday: 10:00 - 17:00 </pre>
+          </summary>
+          <summary>
+            <h3>Follow us:</h3>
+            <div class="socialM">
+              <div class="inst">
+                <img id="ins1" src="/imgs/instagram.png" alt="instagram icon">
+                <img id="ins2" src="/imgs/instagram-color.png" alt="instagram icon">
+                <a href="#" class="socialA" >Instagram</a> 
+              </div><br>
+              <div class="pint">
+                <img id="pin1" src="/imgs/pinterest.png" alt="pinterest icon">
+                <img id="pin2" src="/imgs/pinterest-color.png" alt="pinterest icon">
+                <a href="#"  class="socialA">Pinterest</a>
+            </div>
+          </summary>
+        </aside>
+        <aside id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.086597340575!2d69.28337930000001!3d41.3069797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad59297d1cf%3A0xda0402847aed7b96!2sWestminster%20International%20University%20in%20Tashkent!5e0!3m2!1sen!2s!4v1733100431905!5m2!1sen!2s"
+            width="300"
+            height="300"
+            style="border: 1"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </aside>
+      </section>
+    </main>
+    <script src="/contact.js"></script>
+    <script src="../header.js"></script>
+  </body>
+</html>

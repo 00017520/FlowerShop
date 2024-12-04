@@ -1,0 +1,346 @@
+main {
+  padding: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(127, 121, 109, 255),
+    rgba(127, 121, 109, 255),
+    rgba(134, 128, 116, 255),
+    rgba(140, 133, 117, 255),
+    rgba(144, 134, 124, 255),
+    rgba(146, 139, 121, 255),
+    rgba(149, 142, 124, 255),
+    rgba(152, 145, 126, 255)
+  );
+  color: #f0f0f0;
+}
+
+main img {
+  width: 35%;
+  margin: -20px;
+}
+
+.stars {
+  display: flex;
+  justify-content: start;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.star {
+  font-size: 30px;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s, linear 0.3s;
+}
+
+.star:hover,
+.star.selected {
+  color: gold;
+  transform: scale(1.2);
+}
+
+.star.selected {
+  text-shadow: 0 0 10px gold;
+}
+
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 8px 0 15px ;
+  color: purple;
+}
+
+.options label {
+  background: #f0f0f0;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options input {
+  display: none;
+}
+
+.options input:checked + label {
+  background: #c8e6c9;
+  border-color: #388e3c;
+  color: #388e3c;
+}
+
+
+textarea {
+  width: 90%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid purple;
+  border-radius: 5px;
+  font-size: 16px;
+  outline-color: purple;
+}
+
+textarea::placeholder {
+  color: rgba(145, 20, 145, 0.684)
+}
+
+
+#submit {
+  padding: 10px 30px;
+  background-color: rgb(196, 33, 196);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+#submit:hover {
+  background: purple;
+}
+
+.review {
+  background: #f9f9f9; 
+  padding: 10px;
+  margin-bottom: 10px;
+  color: purple;
+}
+
+.review strong {
+  display: block;
+  color: purple;
+}
+
+#rating {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background-color: rgba(97, 60, 107, 0.436);
+  border: 2px solid purple;
+  border-radius: 30px;
+  width: 60%;
+  padding: 20px;
+}
+
+#rateUs,
+#contactInfo {
+  width: 55%;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  border: 2px solid purple;
+  border-radius: 20px;
+  padding: 5px 20px;
+  outline: none;
+}
+
+#reviews,
+#map {
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  
+}
+
+
+#allReviews.scrollable {
+  margin-top: 10px;
+  max-height: 300px; 
+  overflow-y: auto; 
+  border: 1px solid #d3c3e6; 
+  padding-right: 5px;
+}
+
+
+
+.review,
+iframe {
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid purple;
+}
+
+p {
+  margin: 1px 0;
+}
+
+#customer {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#contact {
+  position: absolute;
+  transform: translate(48%, -112%);
+  border-radius: 30px;
+  padding: 20px;
+  height: 57%;
+  width: 60%;
+  background-color: rgba(97, 60, 107, 0.436);
+  border: 2px solid purple;
+  border-radius: 30px;
+}
+
+summary {
+  margin: 15px 0;
+}
+
+a {
+  display: block;
+  color: #f0f0f0;
+  
+}
+h1 {
+  font-size: 2vw;
+
+}
+
+.socialM #ins1, 
+#ins2,
+#pin1,
+#pin2 {
+  width: 20px;
+  position: absolute;
+  margin: 3px;
+}
+
+.socialM #ins2,
+#pin2{
+  display: none;
+}
+
+.socialM .inst:hover > #ins2,
+.socialM .pint:hover > #pin2{
+  display:inline-block;
+}
+
+.socialM .inst:hover > #ins1,
+.socialM .pint:hover > #pin1{
+  display:none;
+}
+
+.socialM a {
+  margin-left: 30px;
+}
+
+
+@media (max-width: 768px) {
+  main img {
+    width: 60%; 
+    margin: 0;
+  }
+
+  #rating {
+    width: 80%;
+    top: 15%;
+    left: 10%;
+    padding: 15px;
+  }
+
+  #contact {
+    position: relative;
+    transform: none;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  #reviews {
+    top: auto;
+    left: auto;
+    position: relative;
+  }
+
+  .stars {
+    gap: 3px;
+  }
+
+  .star {
+    font-size: 25px;
+  }
+
+  .socialM a {
+    margin-left: 15px;
+  }
+
+  .review {
+    margin-bottom: 5px;
+  }
+
+  #map iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  main section {
+    display: flex;
+  }
+  main img {
+    width: 100%;
+  }
+  nav.open ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  nav.open li {
+    margin: 5px 0;
+  }
+
+  #rating {
+    width: 90%;
+    top: 12%;
+    left: 5%;
+    padding: 10px;
+  }
+
+  #rateUs h1 {
+    font-size: 18px;
+  }
+
+  .options label {
+    font-size: 12px;
+  }
+
+  #submit {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .review {
+    padding: 5px;
+  }
+  #contact {
+    width: 100%;
+    border-radius: 15px;
+    top: -160px;
+  }
+  #contactInfo h1, #contactInfo h3 {
+    font-size: 16px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .socialM a {
+    font-size: 14px;
+    margin-left: 30px;
+  }
+
+  #name {
+    width: 30;
+  }
+}

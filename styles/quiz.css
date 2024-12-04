@@ -1,0 +1,108 @@
+main section{
+    width:100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding:100px 200px;
+}
+main section h1{
+    font-size: 30px;
+    font-family: "Merienda", cursive;
+    font-weight: 200;
+    color: #B522C3;
+}
+main section p{
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+}
+main button{
+    width:fit-content;
+    height: fit-content;
+    font-size:20px;
+    font-family: "Merienda", cursive;
+    padding:7px 55px;
+    border: none;
+    border-radius: 30px;
+    background-color: #B522C3;
+    color:#fff;
+}
+main button:hover{
+    border: solid 1px #B522C3;
+    background-color: transparent;
+    color:#B522C3;
+}
+#questions{
+    padding-top: 100px;
+    margin-top: -200px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0 25%;
+}
+aside ul li{
+    margin:10px 0;    
+    font-size: 1.2rem;
+}
+input[type="radio"]{
+    background-color: #B522C3;
+    accent-color: #B522C3;
+    width: 15px;
+    height: 15px;
+}
+input[type="radio"]:focus{
+    outline: none;
+}
+form button{
+    font-size: 1em;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+#results{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+#result{
+    font-size: 1.3rem;
+    line-height: 30px;
+    width: 60%;
+    font-weight: 100;
+    font-style: italic;
+
+}
+#results img{
+    width:30%;
+    border-radius: 20px;
+
+}
+
+@media screen and (max-width:700px) {
+    main section {
+        padding: 20px;
+    }
+    main a {
+        margin-bottom: 100px;
+    }
+    aside{
+        margin:20px;
+    }
+    #results img, #results h3{
+        width: 90%;
+    }
+    #results p{
+        font-size: 1.3rem;
+    }
+
+}

@@ -1,0 +1,118 @@
+main {
+  background-image: url('../imgs/historybg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 2.5em;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 4.5px;
+}
+
+#timeline, 
+#funFacts {
+  width: 30%;
+  background-color: #8739396a;
+  list-style: none;
+  margin: 30px 100px;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  left: 7%;
+}
+
+#timeline time {
+  font-weight: bolder;
+}
+
+#timeline li {
+  margin: 10px 0;
+  padding: 1px 10px ;
+  transition: background-color 0.3s ease;
+}
+
+#timeline li:hover {
+  background-color: #ffebb8;
+
+}
+
+.dropdownElem{
+  padding: 0 10px;
+}
+
+.dropdownElem:hover {
+  transform: scale(1.02);
+}
+
+.dropdownElem summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #daad88;
+  border-radius: 5px;
+}
+
+.dropdownElem p {
+  display: none;
+  padding: 10px;
+  background-color: #ffebb8;
+}
+
+#videos {
+  width: 60%;
+  height: fit-content;
+  padding: 10px;
+  background-color:#8739396a;
+  text-align: center;
+  margin-left: 22%;
+  padding-bottom: 20px;
+}
+#videos div {
+  display:flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+}
+
+iframe {
+  width: 60%;
+  height: 200px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 11px;
+}
+
+#mute-btn {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  background: #ec3bf9;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+ 
+@media screen and (max-width: 768px) {
+  #timeline, 
+  #funFacts {
+    width: 90%;
+    margin: 30px 5%;
+    left: 0;
+  }
+
+  #videos {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  iframe {
+    width: 90%;
+  }
+  
+}

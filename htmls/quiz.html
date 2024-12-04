@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your personal flower</title>
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/quiz.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <img src="/imgs/logo4.jpg" alt="logo" class="logo" />
+      <button onclick="nav()"><img src="../imgs/logo3.jpg"/></button>
+      <nav class="open">
+        <ul>
+          <li><a href="/htmls/home.html">Home</a></li>
+            <li><a href="/htmls/meaning.html">Flowers meaning</a></li>
+            <li><a href="/htmls/quiz.html">Your personal flower</a></li>
+            <li><a href="/htmls/prices.html">Boques Pricing</a></li>
+            <li><a href="/htmls/history.html">History of Flowers</a></li>
+            <li><a href="/htmls/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section>
+        <h1>Discover Your Floral Essence</h1>
+        <p>
+            Uncover the bouquet that reflects your true self. In just a few simple questions, you'll find which flowers align with your inner spirit—whether it's the creative elegance of an artistic muse, the bright energy of sunshine, the intense passion of love, the playful charm of a whimsical dreamer, or the calming grace of gentleness. Let the flowers that resonate with you reveal the unique essence of who you are.
+        </p>
+        <a href="#questions"><button>Start</button></a>
+        </section>
+      <form id="questions">
+        <!-- each ul's labels in aside has same id, I know it's not proper to do so, but it's easier for me to work in JS in that way -->
+        <aside>
+          <h2>1. How do you typically spend your free time?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="first" id="A" />
+              <label for="A">Journaling, painting, or playing music.</label>
+            </li>
+            <li>
+              <input type="radio" name="first" id="B" />
+              <label for="B">Relaxing in nature or meditating.</label>
+            </li>
+            <li>
+              <input type="radio" name="first" id="C" />
+              <label for="C"
+                >Organizing events and connecting with friends.</label
+              >
+            </li>
+            <li>
+              <input type="radio" name="first" id="D" />
+              <label for="D"
+                >Taking spontaneous trips or seeking adventure.</label
+              >
+            </li>
+            <li>
+              <input type="radio" name="first" id="E" />
+              <label for="E">Volunteering or supporting loved ones.</label>
+            </li>
+          </ul>
+        </aside>
+        <aside>
+          <h2>2. What's your favorite kind of weather?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="second" id="A" />
+              <label for="A">A serene, starry night.</label>
+            </li>
+            <li>
+              <input type="radio" name="second" id="B" />
+              <label for="B">A sunny, breezy spring morning.</label>
+            </li>
+            <li>
+              <input type="radio" name="second" id="C" />
+              <label for="C">A passionate thunderstorm.</label>
+            </li>
+            <li>
+              <input type="radio" name="second" id="D" />
+              <label for="D">A misty, mysterious fog.</label>
+            </li>
+            <li>
+              <input type="radio" name="second" id="E" />
+              <label for="E">A peaceful, warm sunset.</label>
+            </li>
+          </ul>
+        </aside>
+        <aside>
+          <h2>3. Which word best describes your personality?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="third" id="A" />
+              <label for="A">Creative.</label>
+            </li>
+            <li>
+              <input type="radio" name="third" id="B" />
+              <label for="B">Optimistic.</label>
+            </li>
+            <li>
+              <input type="radio" name="third" id="C" />
+              <label for="C">Passionate.</label>
+            </li>
+            <li>
+              <input type="radio" name="third" id="D" />
+              <label for="D">Funny.</label>
+            </li>
+            <li>
+              <input type="radio" name="third" id="E" />
+              <label for="E">Caring.</label>
+            </li>
+          </ul>
+        </aside>
+        <aside>
+          <h2>
+            4. When somebody is facing challenges, how do you approach them?
+          </h2>
+          <ul>
+            <li>
+              <input type="radio" name="fourth" id="A" />
+              <label for="A">By brainstorming creative solutions.</label>
+            </li>
+            <li>
+              <input type="radio" name="fourth" id="B" />
+              <label for="B"
+                >By maintaining a positive attitude and adapting.</label
+              >
+            </li>
+            <li>
+              <input type="radio" name="fourth" id="C" />
+              <label for="C"
+                >By confronting them head-on with determination.</label
+              >
+            </li>
+            <li>
+              <input type="radio" name="fourth" id="D" />
+              <label for="D">By finding humor or a playful distraction.</label>
+            </li>
+            <li>
+              <input type="radio" name="fourth" id="E" />
+              <label for="E"
+                >By caring for everyone involved and finding harmony.</label
+              >
+            </li>
+          </ul>
+        </aside>
+        <aside>
+          <h2>5. Which setting do you feel most comfortable in?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="fifth" id="A" />
+              <label for="A">A quiet gallery or library.</label>
+            </li>
+            <li>
+              <input type="radio" name="fifth" id="B" />
+              <label for="B">A vibrant picnic in the park.</label>
+            </li>
+            <li>
+              <input type="radio" name="fifth" id="C" />
+              <label for="C">A candlelit dinner with deep conversation.</label>
+            </li>
+            <li>
+              <input type="radio" name="fifth" id="D" />
+              <label for="D">A carnival or lively festival.</label>
+            </li>
+            <li>
+              <input type="radio" name="fifth" id="E" />
+              <label for="E">A cozy family gathering.</label>
+            </li>
+          </ul>
+        </aside>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="results">
+        <img id="imageResult" src=""  />
+        <h3 id="result"></h3>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <section>
+        <div class="about">
+          <h2>Contact us</h2>
+          <ul>
+            <li>Address:<a href="">Istikbol Street 12, 100047, Tashkent, Uzbekistan</a></li>
+            <li>Phone number:<a href="">+998 90 123 45 67</a></li>
+            <li>Email:<a href="">info@boques.uz</a></li>
+            <li>
+              <a href="./contact.html"><span class="viewMore">More in here</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <h2>Links</h2>
+          <ul>
+            <li><a href="/htmls/home.html">Home</a></li>
+            <li><a href="/htmls/meaning.html">Flowers meaning</a></li>
+            <li><a href="/htmls/quiz.html">Personal flower</a></li>
+            <li><a href="/htmls/prices.html">Boques Pricing</a></li>
+            <li><a href="/htmls/history.html">Flowers's history</a></li>
+            <li><a href="/htmls/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="socialM">
+          <h2>Follow us</h2>
+          <div class="inst">
+            <img id="ins1" src="/imgs/instagram.png" alt="instagram icon">
+            <img id="ins2" src="/imgs/instagram-color.png" alt="instagram icon">
+            <a href="#" class="socialA" >Instagram</a> 
+          </div><br>
+          <div class="pint">
+            <img id="pin1" src="/imgs/pinterest.png" alt="pinterest icon">
+            <img id="pin2" src="/imgs/pinterest-color.png" alt="pinterest icon">
+            <a href="#"  class="socialA">Pinterest</a>
+        </div>
+        </div>
+      </section>
+      <section>
+        <div class="copy">
+          <p>&copy; 2024 Web-tech | This website was created to fulfill Web Technology 
+            module's requirements and does not represent an actual company or service</p>
+        </div>
+      </section>
+    </footer>
+    <script src="../quiz.js"></script>
+    <script src="../header.js"></script>
+  </body>
+</html>

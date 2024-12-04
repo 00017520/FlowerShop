@@ -1,0 +1,182 @@
+.Homeh {
+  background-image: url(../imgs/homebg2.jpg) ;
+  background-size: auto;
+  background-repeat: repeat;
+  color: #fff;
+  background-color: rgba(34, 32, 32, 0.581);
+  /* height: 100%; */
+}
+
+main {
+  /* height: 100vh; */
+  background-color: rgba(84, 80, 80, 0.367);
+}
+
+h1 {
+  width: 70%;
+  margin: 2vw auto;
+  font-size: 4vw;
+  text-align: center;
+}
+
+.viewMore:hover{
+  letter-spacing:0.2rem;
+  transition: letter-spacing 0.3s ease-in-out;
+}
+
+main .line {
+  margin: 3% 0;
+  height: 2px;
+  border-width: 0;
+  background-color: purple;
+}
+
+.meaning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  gap: 5vw;
+  position: relative;
+}
+
+.flower img {
+  width: 18vw;
+  transition: 0.4s ease-in-out;
+}
+
+.flower article {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  background: rgba(181, 6, 208, 0.515);
+  padding: 10px;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.flower:hover article {
+  visibility: visible;
+}
+
+.container:hover .flower img:not(:hover) {
+  filter: grayscale(100%);
+}
+
+.flower img:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.4s ease-in-out;
+}
+
+.meaning a {
+    color: purple;
+    margin-top: 17vw;
+    font-size: 2vw;
+}
+
+.meaning a:hover {
+    font-weight: bold;
+}
+
+
+/* qiuz */
+
+.quiz {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.quiz button {
+  background-color: transparent;
+  border: none;
+  margin-top: 2vw;
+
+}
+.quiz button a {
+  background-color: transparent;
+  border: dashed 1px purple;
+  border-radius: 100px;
+  color: purple;
+  font-size: 1.5vw;
+  padding: 10px;
+}
+
+.quiz button a:hover {
+  background-color: rgba(168, 40, 168, 0.616);
+  color: #fff;
+  border: dashed 1px #fff;
+  transition: background-color 0.6s ease-in-out, border 0.3s ease-in-out;
+}
+
+
+/* pricing */
+
+.pricing {
+  text-align: center;
+  padding: 2rem;
+}
+
+
+.pricing .pricesamlpe {
+  display: grid;
+  place-items: center;
+  width: 30vw;
+  margin: auto;
+  background-color: rgba(199, 118, 211, 0.274);
+  border: ridge rgb(166, 68, 166) 2px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing .pricesamlpe:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pricesamlpe a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pricing img {
+  width: 90%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 5px;
+  border: ridge rgb(166, 68, 166) 2px;
+  transition: transform 0.3s ease;
+}
+
+
+.pricesamlpe p {
+  font-size: 1.2rem;
+  color: #6b306b;
+  margin:  1rem  0;
+  font-weight: bold;
+}
+
+
+/* history */
+
+.history p {
+  font-size: 1.8vw;
+  /* text-align: center; */
+  width: 45%;
+  margin: auto ;
+  padding: 20px;
+}

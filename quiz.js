@@ -34,16 +34,16 @@ document.getElementById("questions").addEventListener("submit", function (event)
         image.setAttribute("src", "../imgs/Artisticbq.webp");
     } else if (totalScore >= 10 && totalScore <= 13) {
         resultText = N2;
-        image.setAttribute("src", "../imgs/Gentle.webp");
+        image.setAttribute("src", "../imgs/Sunshine.webp");
     } else if (totalScore >= 14 && totalScore <= 17) {
         resultText = N3;
-        image.setAttribute("src", "../imgs/Sunshine.webp");
+        image.setAttribute("src", "../imgs/Passionate.webp");
     } else if (totalScore >= 18 && totalScore <= 21) {
         resultText = N4;
         image.setAttribute("src", "../imgs/Whimsical.webp");
     } else if (totalScore >= 22 && totalScore <= 25) {
         resultText = N5;
-        image.setAttribute("src", "../imgs/Passionate.webp");
+        image.setAttribute("src", "../imgs/Gentle.webp");
     }
     document.getElementById("result").innerHTML = resultText + '<a href="./prices.html"> Order now..!</a>';
 });
